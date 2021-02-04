@@ -33,10 +33,10 @@ def send_sms(sms_text):
 
     message = client.messages \
         .create(
-        body=sms_text,
-        from_=tw_tel_num,
-        to=my_tel_num
-    )
+            body=sms_text,
+            from_=tw_tel_num,
+            to=my_tel_num
+        )
 
     return message.sid
 
